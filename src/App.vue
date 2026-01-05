@@ -6,7 +6,7 @@
     <!-- Header -->
     <header class="mb-12 animate-fade-in">
       <nav class="flex-between mb-8">
-        <span style="font-weight: 800; font-size: 1.25rem;">Gian7</span>
+        <span style="font-weight: 800; font-size: 1.25rem;">GiaN7</span>
         <div class="nav-links">
           <a href="#about" class="nav-link mr-4">Tentang</a>
           <a href="#projects" class="nav-link mr-4">Jejak Digital</a>
