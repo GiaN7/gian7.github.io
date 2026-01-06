@@ -2,11 +2,14 @@
 </script>
 
 <template>
+  <!-- N7 Iconic Stripe -->
+  <div class="n7-stripe"></div>
+
   <div class="portfolio">
     <!-- Header -->
     <header class="mb-12 animate-fade-in">
       <nav class="flex-between mb-8">
-        <span style="font-weight: 800; font-size: 1.25rem;">GiaN7</span>
+        <span class="logo-text">GiaN7</span>
         <div class="nav-links">
           <a href="#about" class="nav-link mr-4">Tentang</a>
           <a href="#projects" class="nav-link mr-4">Jejak Digital</a>
@@ -43,10 +46,10 @@
       <h2>Tentang</h2>
       <div class="card">
         <p>
-          Perjalanan saya bermula pada tahun 2015, merakit logika dengan <strong>Arduino</strong> dan <strong>ESP32</strong> untuk memahami prinsip kerja IoT.
+          Memulai perjalanan dari dunia hardware (Arduino/ESP32), saya terbiasa ditekankan pada logika yang presisi dan efisien sejak 2015.
         </p>
         <p style="margin-bottom: 0;">
-          Kini, saya membawa presisi hardware tersebut ke pengembangan web modern dengan <strong>Vue 3</strong>. Saya fokus menciptakan antarmuka yang responsif, cepat, dan estetik.
+          Transisi ke Web Development bagi saya adalah memperluas canvas kreativitas. Dengan <strong>Vue 3</strong>, saya membangun aplikasi yang tidak hanya solid secara fungsi, tapi juga punya estetika visual yang kuat. <em>Code is clean, design is sharp.</em>
         </p>
       </div>
     </section>
@@ -118,6 +121,10 @@
         <p class="muted-text">© 2025 Wahyu Ivdal Saputra</p>
         <p class="muted-text" style="font-size: 0.85rem;">Built with Vue 3 & Vite</p>
       </div>
+      <!-- N7 Watermark -->
+      <div style="text-align: center;">
+        <div class="footer-watermark">Gia<span class="n7-accent">N7</span></div>
+      </div>
     </footer>
   </div>
 </template>
@@ -139,7 +146,32 @@
 .intro {
   font-size: 1.25rem;
   line-height: 1.6;
-  color: #374151;
+  color: var(--color-text-muted); /* Changed from fixed hex */
   max-width: 650px;
+}
+
+.intro strong {
+  color: var(--color-text-main);
+}
+
+.logo-text {
+  font-weight: 800; 
+  font-size: 1.25rem;
+  color: var(--n7-white);
+  border-bottom: 2px solid var(--n7-red);
+}
+
+.footer-watermark {
+  font-weight: 800;
+  color: #333;
+  margin-top: 1rem;
+  opacity: 0.3;
+  user-select: none;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.n7-accent {
+  color: var(--n7-red);
 }
 </style>
